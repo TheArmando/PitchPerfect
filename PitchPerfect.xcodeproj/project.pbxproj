@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		47B11BBA1CE0305800395982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BB91CE0305800395982 /* AppDelegate.swift */; };
-		47B11BBC1CE0305800395982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BBB1CE0305800395982 /* ViewController.swift */; };
+		47B11BBC1CE0305800395982 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BBB1CE0305800395982 /* RecordSoundsViewController.swift */; };
 		47B11BBF1CE0305800395982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B11BBD1CE0305800395982 /* Main.storyboard */; };
 		47B11BC11CE0305800395982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47B11BC01CE0305800395982 /* Assets.xcassets */; };
 		47B11BC41CE0305800395982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B11BC21CE0305800395982 /* LaunchScreen.storyboard */; };
 		47B11BCF1CE0305800395982 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BCE1CE0305800395982 /* PitchPerfectTests.swift */; };
 		47B11BDA1CE0305800395982 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BD91CE0305800395982 /* PitchPerfectUITests.swift */; };
+		47B11BE81CE12BC400395982 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BE71CE12BC400395982 /* PlaySoundsViewController.swift */; };
+		47B11BEA1CE4236500395982 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B11BE91CE4236500395982 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		47B11BB61CE0305800395982 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B11BB91CE0305800395982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47B11BBB1CE0305800395982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47B11BBB1CE0305800395982 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		47B11BBE1CE0305800395982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47B11BC01CE0305800395982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47B11BC31CE0305800395982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		47B11BD51CE0305800395982 /* PitchPerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B11BD91CE0305800395982 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		47B11BDB1CE0305800395982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B11BE71CE12BC400395982 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		47B11BE91CE4236500395982 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				47B11BB91CE0305800395982 /* AppDelegate.swift */,
-				47B11BBB1CE0305800395982 /* ViewController.swift */,
+				47B11BBB1CE0305800395982 /* RecordSoundsViewController.swift */,
+				47B11BE91CE4236500395982 /* PlaySoundsViewController+Audio.swift */,
 				47B11BBD1CE0305800395982 /* Main.storyboard */,
+				47B11BE71CE12BC400395982 /* PlaySoundsViewController.swift */,
 				47B11BC01CE0305800395982 /* Assets.xcassets */,
 				47B11BC21CE0305800395982 /* LaunchScreen.storyboard */,
 				47B11BC51CE0305800395982 /* Info.plist */,
@@ -193,13 +199,17 @@
 				TargetAttributes = {
 					47B11BB51CE0305800395982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D3SDS747SC;
+						LastSwiftMigration = 0820;
 					};
 					47B11BC91CE0305800395982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 47B11BB51CE0305800395982;
 					};
 					47B11BD41CE0305800395982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 47B11BB51CE0305800395982;
 					};
 				};
@@ -256,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47B11BBC1CE0305800395982 /* ViewController.swift in Sources */,
+				47B11BBC1CE0305800395982 /* RecordSoundsViewController.swift in Sources */,
+				47B11BEA1CE4236500395982 /* PlaySoundsViewController+Audio.swift in Sources */,
+				47B11BE81CE12BC400395982 /* PlaySoundsViewController.swift in Sources */,
 				47B11BBA1CE0305800395982 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +413,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +429,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PitchPerfect.app/PitchPerfect";
 			};
 			name = Debug;
@@ -439,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PitchPerfect.app/PitchPerfect";
 			};
 			name = Release;
@@ -450,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PitchPerfect;
 			};
 			name = Debug;
@@ -461,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TheArmando.PitchPerfectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PitchPerfect;
 			};
 			name = Release;
@@ -484,6 +510,7 @@
 				47B11BE01CE0305800395982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47B11BE11CE0305800395982 /* Build configuration list for PBXNativeTarget "PitchPerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +519,7 @@
 				47B11BE31CE0305800395982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47B11BE41CE0305800395982 /* Build configuration list for PBXNativeTarget "PitchPerfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +528,7 @@
 				47B11BE61CE0305800395982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
